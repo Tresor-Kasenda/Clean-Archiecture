@@ -9,7 +9,7 @@
     ],
     "autoload":  {
         "psr-4": {
-            "CleanPHP\\Invocer\\": "src/"
+            "CleanPHP\\Invoicer\\": "src/"
         }
     },
     "minimum-stability": "dev",
