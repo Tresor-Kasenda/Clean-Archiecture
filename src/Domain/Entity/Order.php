@@ -29,7 +29,7 @@ class Order
      * @param Customer|null $customer
      * @return $this
      */
-    public function setCustomer(?Customer $customer): Order
+    public function setCustomer(?Customer $customer): self
     {
         $this->customer = $customer;
         return $this;
@@ -47,7 +47,7 @@ class Order
      * @param int|null $orderNumber
      * @return $this
      */
-    public function setOrderNumber(?int $orderNumber): Order
+    public function setOrderNumber(?int $orderNumber): self
     {
         $this->orderNumber = $orderNumber;
         return $this;
@@ -65,7 +65,7 @@ class Order
      * @param string|null $description
      * @return $this
      */
-    public function setDescription(?string $description): Order
+    public function setDescription(?string $description): self
     {
         $this->description = $description;
         return $this;
@@ -83,7 +83,7 @@ class Order
      * @param int|null $total
      * @return $this
      */
-    public function setTotal(?int $total): Order
+    public function setTotal(?int $total): self
     {
         $this->total = $total;
         return $this;
