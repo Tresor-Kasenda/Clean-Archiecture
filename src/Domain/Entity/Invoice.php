@@ -3,8 +3,6 @@ declare(strict_types=1);
 
 namespace CleanPHP\Invoicer\Domain\Entity;
 
-use Cassandra\Date;
-
 /**
  * Class Invoice
  * @package CleanPHP\Invoicer\Domain\Entity
@@ -13,7 +11,7 @@ class Invoice
 {
     protected Order $order;
 
-    protected Date $invoiceDate;
+    protected \DateTime $invoiceDate;
 
     protected ?int $total;
 
@@ -36,18 +34,18 @@ class Invoice
     }
 
     /**
-     * @return Date
+     * @return \DateTime
      */
-    public function getInvoiceDate(): Date
+    public function getInvoiceDate(): \DateTime
     {
         return $this->invoiceDate;
     }
 
     /**
-     * @param Date $invoiceDate
+     * @param \DateTime $invoiceDate
      * @return $this
      */
-    public function setInvoiceDate(Date $invoiceDate): self
+    public function setInvoiceDate(\DateTime $invoiceDate): self
     {
         $this->invoiceDate = $invoiceDate;
         return $this;
