@@ -13,5 +13,7 @@
         }
     },
     "minimum-stability": "dev",
-    "require": {}
+    "require-dev": {
+        "peridot-php/peridot": "dev-master"
+    }
 }
