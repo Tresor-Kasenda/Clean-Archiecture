@@ -1,0 +1,17 @@
+{
+    "name": "clean-php/project",
+    "description": "une application qui me permet d'approfondir sur la  clean architecture avec comme langage de programmation php",
+    "authors": [
+        {
+            "name": "tresor",
+            "email": "scotttresor@gmail.com"
+        }
+    ],
+    "autoload":  {
+        "psr-4": {
+            "CleanPHP\\Invocer\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
