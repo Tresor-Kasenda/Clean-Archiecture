@@ -14,6 +14,10 @@ class InvoiceFactory
 {
     public function createFromOrder(Order $order): Invoice
     {
-        return new Invoice();
+        $invoice =  new Invoice();
+        $invoice->setOrder($order);
+        $invoice->setInvoiceDate(new \DateTime());
+        $invoice->setTotal($order->getTotal());
+        return $invoice;
     }
 }
